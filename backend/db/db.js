@@ -1,4 +1,4 @@
-// db connected
+// db connection success
 
 const mongoose = require('mongoose');
 
