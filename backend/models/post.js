@@ -1,4 +1,4 @@
-// A model for post in the blog
+// A model for post in the blog.
 const mongoose = require('mongoose');
 
 const Post = mongoose.model('Post', {
