@@ -7,7 +7,7 @@ import validEmailRegex from '../../utils/emailRegex'
 import './Auth.css'
 import { AuthContext } from '../../context/auth-context'
 import Spinner from '../../Containers/Spinner/Spinner';
-import logimg from '../../assets/lg.png'
+import logimg from '../../assets/logg.png'
 export class Auth extends Component {
     static contextType = AuthContext
     constructor(props) {
@@ -182,8 +182,9 @@ export class Auth extends Component {
 
             <div className="container container-short py-5">
                 <img src={logimg} className="img-fluid mx-auto d-block max-width: 5% max-height: 5%" alt="img" />
-                <h2 className="text-center"> Let's {this.state.isLoginMode ? 'Sign-in ' : 'Sign-up'}</h2>
+                <h2 className="text-center mt-4"> Let's {this.state.isLoginMode ? 'Sign-in ' : 'Sign-up'}</h2>
                 {/* <hr></hr> */}
+                <div></div>
                 <form onSubmit={this.mySubmitHandler} className="pt-4">
                     <div className="form-group">
                         <label htmlFor="email">Email </label>
