@@ -1,8 +1,11 @@
+/* Auth css */
+
 .container-short{
     
     margin: 0 auto;
     float: none;
     max-width: 750px!important;
+    background: transparent;
     
 }
 

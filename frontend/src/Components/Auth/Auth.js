@@ -8,6 +8,8 @@ import './Auth.css'
 import { AuthContext } from '../../context/auth-context'
 import Spinner from '../../Containers/Spinner/Spinner';
 import logimg from '../../assets/logg.png'
+import log from '../../assets/log.png'
+// import design from '../../Containers/animation/design';
 export class Auth extends Component {
     static contextType = AuthContext
     constructor(props) {
@@ -181,7 +183,8 @@ export class Auth extends Component {
             {iserror}
 
             <div className="container container-short py-5">
-                <img src={logimg} className="img-fluid mx-auto d-block max-width: 5% max-height: 5%" alt="img" />
+                {/* <design></design> */}
+                <img  className="img-fluid mx-auto d-block max-width: 5% max-height: 5%" alt="img" src= {this.state.isLoginMode ? log : logimg} />
                 <h2 className="text-center mt-4"> Let's {this.state.isLoginMode ? 'Sign-in ' : 'Sign-up'}</h2>
                 {/* <hr></hr> */}
                 <div></div>
@@ -226,14 +229,14 @@ export class Auth extends Component {
                             disabled={this.state.user.email && this.state.user.password
                                 && (validateForm(this.state.errors)) ? '' : 'disabled'}
                         >
-                            {this.state.isLoginMode ? 'Login' : 'Sign Up'}
+                            {this.state.isLoginMode ? 'Sign-in' : 'Sign-up'}
                         </button>
 
                         <button style={{background: '#123597' , marginRight: '15px', align:'right' }}
                             type='button'
                             className="btn btn-primary"
                             onClick={this.switchLoginhandler}
-                        >Switch to {this.state.isLoginMode ? 'Sign Up' : 'Login'} </button>
+                        >Switch to {this.state.isLoginMode ? 'Sign-up' : 'Sign-in'} </button>
                     </div>
                 </form>
 
