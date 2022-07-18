@@ -17,7 +17,7 @@ function SocialMedia() {
           </li>
           <li className="nav-item inline-block">
             <a
-              href="https://medium.com/@mehulkothari05"
+              href="https://www.facebook.com/profile.php?id=100005601079219"
               aria-label="Medium"
               className="nav-link"
             >
