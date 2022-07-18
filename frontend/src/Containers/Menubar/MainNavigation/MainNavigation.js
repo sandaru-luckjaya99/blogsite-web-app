@@ -30,7 +30,7 @@ const MainNavigation = props => {
       <div className={attachedClasses.join(' ')}>
         {(
           <SideDrawer open={drawerIsOpen} closed={closeDrawer} >
-            <h4 className="text-left mt-2 pl-4">Blog Book</h4>
+            <h4 className="text-left mt-2 pl-4">Creatives-hub</h4>
             <hr />
             <nav className="main-navigation__drawer-nav" >
               <img src={img} alt="logo" />
@@ -50,7 +50,7 @@ const MainNavigation = props => {
           <span />
         </button>
         <h1 className="main-navigation__title">
-          <Link to="/">Blog Book</Link>
+          <Link to="/">Creatives-hub</Link>
         </h1>
         <nav className="main-navigation__header-nav">
           <NavLinks />
