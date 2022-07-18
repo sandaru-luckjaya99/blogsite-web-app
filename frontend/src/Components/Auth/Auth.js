@@ -168,24 +168,27 @@ export class Auth extends Component {
             iserror = (
                 <>
                     <div className="container error container-short">
-                        <div className="mar-20">
-                            
-                            <h5>Error Code - {this.state.error.code}</h5>
-                            <h4>Error Message - {this.state.error.message}</h4>
-                        </div>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>{this.state.error.message}</strong> You should check your email and password !!!.
+                        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
+                    </div>
+
                 </>
             )
         }
         return (<>
 
             {isLoading}
-            {iserror}
+            
 
             <div className="container container-short py-5">
                 {/* <design></design> */}
                 <img  className="img-fluid mx-auto d-block max-width: 5% max-height: 5%" alt="img" src= {this.state.isLoginMode ? log : logimg} />
                 <h2 className="text-center mt-4"> Let's {this.state.isLoginMode ? 'Sign-in ' : 'Sign-up'}</h2>
+                {iserror}
                 {/* <hr></hr> */}
                 <div></div>
                 <form onSubmit={this.mySubmitHandler} className="pt-4">
