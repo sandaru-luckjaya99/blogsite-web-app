@@ -212,7 +212,7 @@ export class CreatePost extends Component {
                 <>
                     <div className="container error container-short">
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <strong>{this.state.error.message}</strong> You should check your email and password !!!.
+                        <strong>{this.state.error.message}</strong>
                         <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
