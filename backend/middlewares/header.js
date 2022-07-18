@@ -1,5 +1,5 @@
 
-// Middle ware auth faild
+// Middle ware for header
 const express = require("express");
 const bodyParser = require("body-parser");
 const headers = new express.Router()
