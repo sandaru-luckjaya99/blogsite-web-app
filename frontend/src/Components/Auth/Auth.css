@@ -1,0 +1,30 @@
+/* Auth css */
+
+.container-short{
+    
+    margin: 0 auto;
+    float: none;
+    max-width: 750px!important;
+    background: transparent;
+    
+}
+
+label{
+    font-weight: bold;
+}
+
+h2{
+    color:#2C3E50;
+}
+
+
+.mar-20{
+    margin-top:15%
+}
+.error h4{
+    color: red;
+}
+
+.error h5{
+    color:red;
+}
